@@ -26,7 +26,7 @@ cp -f "$NATIVEEXTENSION_SWC" "$CONFIGURATION_BUILD_DIR"
 rm -rf "$CONFIGURATION_BUILD_DIR"/libs
 
 echo copying framework file the "$PROJECT_DIR"/ANECompiler/libs.
-cp -r "$PROJECT_DIR"/ANECompiler/libs "$CONFIGURATION_BUILD_DIR"/libs
+#cp -r "$PROJECT_DIR"/ANECompiler/libs "$CONFIGURATION_BUILD_DIR"/libs
 
 #Extract library.swf from the swc
 echo "Extracting library.swf from the swc provided by the user"

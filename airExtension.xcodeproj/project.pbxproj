@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17007FB917398624009C1500 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 17007FB817398624009C1500 /* FlashRuntimeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AC0EBB1151A38F300A3043E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC0EBB0151A38F300A3043E /* Foundation.framework */; };
+		5AC0EBC2151A3BEE00A3043E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC0EBC1151A3BEE00A3043E /* UIKit.framework */; };
+		757279851AAEE371003B78C9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757279841AAEE371003B78C9 /* AVFoundation.framework */; };
+		757279911AAEE3C7003B78C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757279901AAEE3C7003B78C9 /* CoreGraphics.framework */; };
+		757F1DA91AAD43E700FA2EA6 /* AirExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 757F1DA71AAD43E700FA2EA6 /* AirExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757F1DAA1AAD43E700FA2EA6 /* AirExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 757F1DA81AAD43E700FA2EA6 /* AirExtension.m */; };
+		75A727111AD50FCE008A2FBB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A727101AD50FCE008A2FBB /* QuartzCore.framework */; };
+		75A727131AD50FD6008A2FBB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A727121AD50FD6008A2FBB /* OpenGLES.framework */; };
+		75B77AA11AB92AF7007275C8 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B77AA01AB92AF7007275C8 /* libiconv.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		75B77AA31AB92DE8007275C8 /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B77AA21AB92DE8007275C8 /* libbz2.1.0.dylib */; };
+		75C6974A1AB978B600A54283 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C697491AB978B600A54283 /* libz.1.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		750DF6BA1B0340E00008A70E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AC0EBA4151A38F300A3043E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 757FBFB91B01FB0C00D27E4C;
+			remoteInfo = airJavaExtension;
+		};
+		75C6974F1ABA5C4800A54283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AC0EBA4151A38F300A3043E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AC0EBAC151A38F300A3043E;
+			remoteInfo = AirAirplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17007FB817398624009C1500 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		5AC0EBAD151A38F300A3043E /* libairExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libairExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC0EBB0151A38F300A3043E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5AC0EBB4151A38F300A3043E /* airExtension-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "airExtension-Prefix.pch"; sourceTree = "<group>"; };
+		5AC0EBC1151A3BEE00A3043E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		750DF6B91B02FF380008A70E /* generateJar.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateJar.sh; sourceTree = "<group>"; };
+		7561F9EA1AF2110500FCF5C8 /* main.as */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.as; sourceTree = "<group>"; };
+		757279841AAEE371003B78C9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		757279901AAEE3C7003B78C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		757F1DA71AAD43E700FA2EA6 /* AirExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirExtension.h; sourceTree = "<group>"; };
+		757F1DA81AAD43E700FA2EA6 /* AirExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirExtension.m; sourceTree = "<group>"; };
+		757FBF9B1B01F35F00D27E4C /* extensionJava.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = extensionJava.xml; sourceTree = "<group>"; };
+		757FBFA81B01F87B00D27E4C /* FlashRuntimeExtensions.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = FlashRuntimeExtensions.jar; sourceTree = "<group>"; };
+		757FBFAD1B01F87B00D27E4C /* airExtension.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = airExtension.java; sourceTree = "<group>"; };
+		757FBFAE1B01F87B00D27E4C /* airExtensionContext.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = airExtensionContext.java; sourceTree = "<group>"; };
+		757FBFB31B01F89F00D27E4C /* IsSupported.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = IsSupported.java; sourceTree = "<group>"; };
+		757FBFBA1B01FB0C00D27E4C /* libairJavaExtension.jar */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libairJavaExtension.jar; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A727101AD50FCE008A2FBB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		75A727121AD50FD6008A2FBB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		75A8C7461AB036600041B6B0 /* airExtension.ane */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = airExtension.ane; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A8C7651AB03A6F0041B6B0 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
+		75A8C7731AB175920041B6B0 /* install.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = install.md; sourceTree = "<group>"; };
+		75A8C7751AB196740041B6B0 /* extension.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = extension.xml; sourceTree = "<group>"; };
+		75A8C7851AB196740041B6B0 /* platformRTMP.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = platformRTMP.xml; sourceTree = "<group>"; };
+		75B77AA01AB92AF7007275C8 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		75B77AA21AB92DE8007275C8 /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
+		75C697491AB978B600A54283 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AC0EBAA151A38F300A3043E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A727131AD50FD6008A2FBB /* OpenGLES.framework in Frameworks */,
+				75A727111AD50FCE008A2FBB /* QuartzCore.framework in Frameworks */,
+				75C6974A1AB978B600A54283 /* libz.1.dylib in Frameworks */,
+				75B77AA31AB92DE8007275C8 /* libbz2.1.0.dylib in Frameworks */,
+				75B77AA11AB92AF7007275C8 /* libiconv.dylib in Frameworks */,
+				757279911AAEE3C7003B78C9 /* CoreGraphics.framework in Frameworks */,
+				757279851AAEE371003B78C9 /* AVFoundation.framework in Frameworks */,
+				5AC0EBC2151A3BEE00A3043E /* UIKit.framework in Frameworks */,
+				5AC0EBB1151A38F300A3043E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757FBFB71B01FB0C00D27E4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AC0EBA2151A38F300A3043E = {
+			isa = PBXGroup;
+			children = (
+				75A8C7731AB175920041B6B0 /* install.md */,
+				757FBFA51B01F87B00D27E4C /* Java */,
+				75A8C7671AB126F20041B6B0 /* Flash */,
+				75A8C7631AB0387E0041B6B0 /* ANECompiler */,
+				5AC0EBB2151A38F300A3043E /* AirExtension */,
+				5AC0EBAF151A38F300A3043E /* Frameworks */,
+				5AC0EBAE151A38F300A3043E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AC0EBAE151A38F300A3043E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AC0EBAD151A38F300A3043E /* libairExtension.a */,
+				75A8C7461AB036600041B6B0 /* airExtension.ane */,
+				757FBFBA1B01FB0C00D27E4C /* libairJavaExtension.jar */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AC0EBAF151A38F300A3043E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75A727121AD50FD6008A2FBB /* OpenGLES.framework */,
+				75A727101AD50FCE008A2FBB /* QuartzCore.framework */,
+				75C697491AB978B600A54283 /* libz.1.dylib */,
+				75B77AA21AB92DE8007275C8 /* libbz2.1.0.dylib */,
+				75B77AA01AB92AF7007275C8 /* libiconv.dylib */,
+				757279841AAEE371003B78C9 /* AVFoundation.framework */,
+				757279901AAEE3C7003B78C9 /* CoreGraphics.framework */,
+				5AC0EBB0151A38F300A3043E /* Foundation.framework */,
+				5AC0EBC1151A3BEE00A3043E /* UIKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AC0EBB2151A38F300A3043E /* AirExtension */ = {
+			isa = PBXGroup;
+			children = (
+				17007FB817398624009C1500 /* FlashRuntimeExtensions.h */,
+				757F1DA71AAD43E700FA2EA6 /* AirExtension.h */,
+				757F1DA81AAD43E700FA2EA6 /* AirExtension.m */,
+				5AC0EBB3151A38F300A3043E /* Supporting Files */,
+			);
+			path = AirExtension;
+			sourceTree = "<group>";
+		};
+		5AC0EBB3151A38F300A3043E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AC0EBB4151A38F300A3043E /* airExtension-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7561F9E81AF20F6A00FCF5C8 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		7561F9E91AF2110500FCF5C8 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				7561F9EA1AF2110500FCF5C8 /* main.as */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		757FBFA51B01F87B00D27E4C /* Java */ = {
+			isa = PBXGroup;
+			children = (
+				757FBFA61B01F87B00D27E4C /* bin */,
+				757FBFA71B01F87B00D27E4C /* libs */,
+				757FBFA91B01F87B00D27E4C /* src */,
+			);
+			path = Java;
+			sourceTree = "<group>";
+		};
+		757FBFA61B01F87B00D27E4C /* bin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		757FBFA71B01F87B00D27E4C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				757FBFA81B01F87B00D27E4C /* FlashRuntimeExtensions.jar */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		757FBFA91B01F87B00D27E4C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				757FBFAA1B01F87B00D27E4C /* com */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		757FBFAA1B01F87B00D27E4C /* com */ = {
+			isa = PBXGroup;
+			children = (
+				757FBFAB1B01F87B00D27E4C /* ane */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		757FBFAB1B01F87B00D27E4C /* ane */ = {
+			isa = PBXGroup;
+			children = (
+				757FBFAC1B01F87B00D27E4C /* android */,
+			);
+			path = ane;
+			sourceTree = "<group>";
+		};
+		757FBFAC1B01F87B00D27E4C /* android */ = {
+			isa = PBXGroup;
+			children = (
+				757FBFB21B01F89F00D27E4C /* functions */,
+				757FBFAD1B01F87B00D27E4C /* airExtension.java */,
+				757FBFAE1B01F87B00D27E4C /* airExtensionContext.java */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		757FBFB21B01F89F00D27E4C /* functions */ = {
+			isa = PBXGroup;
+			children = (
+				757FBFB31B01F89F00D27E4C /* IsSupported.java */,
+			);
+			path = functions;
+			sourceTree = "<group>";
+		};
+		75A8C7631AB0387E0041B6B0 /* ANECompiler */ = {
+			isa = PBXGroup;
+			children = (
+				757FBF9B1B01F35F00D27E4C /* extensionJava.xml */,
+				75A8C7751AB196740041B6B0 /* extension.xml */,
+				75A8C7851AB196740041B6B0 /* platformRTMP.xml */,
+				75A8C7651AB03A6F0041B6B0 /* generateANE.sh */,
+				750DF6B91B02FF380008A70E /* generateJar.sh */,
+			);
+			path = ANECompiler;
+			sourceTree = "<group>";
+		};
+		75A8C7671AB126F20041B6B0 /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+				7561F9E81AF20F6A00FCF5C8 /* bin */,
+				75A8C7681AB167D20041B6B0 /* src */,
+			);
+			path = Flash;
+			sourceTree = "<group>";
+		};
+		75A8C7681AB167D20041B6B0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				75A8C7691AB167D20041B6B0 /* com */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		75A8C7691AB167D20041B6B0 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				75A8C76A1AB167D20041B6B0 /* ios */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		75A8C76A1AB167D20041B6B0 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				7561F9E91AF2110500FCF5C8 /* ext */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5AC0EBAB151A38F300A3043E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757F1DA91AAD43E700FA2EA6 /* AirExtension.h in Headers */,
+				17007FB917398624009C1500 /* FlashRuntimeExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757FBFB81B01FB0C00D27E4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5AC0EBAC151A38F300A3043E /* airExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AC0EBBA151A38F400A3043E /* Build configuration list for PBXNativeTarget "airExtension" */;
+			buildPhases = (
+				5AC0EBA9151A38F300A3043E /* Sources */,
+				5AC0EBAA151A38F300A3043E /* Frameworks */,
+				5AC0EBAB151A38F300A3043E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = airExtension;
+			productName = AirPushNotification;
+			productReference = 5AC0EBAD151A38F300A3043E /* libairExtension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		757FBFB91B01FB0C00D27E4C /* airJavaExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 757FBFBB1B01FB0C00D27E4C /* Build configuration list for PBXNativeTarget "airJavaExtension" */;
+			buildPhases = (
+				757FBFB61B01FB0C00D27E4C /* Sources */,
+				757FBFB71B01FB0C00D27E4C /* Frameworks */,
+				757FBFB81B01FB0C00D27E4C /* Headers */,
+				757FBFBE1B01FB3200D27E4C /* Java compile */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = airJavaExtension;
+			productName = airJavaExtension;
+			productReference = 757FBFBA1B01FB0C00D27E4C /* libairJavaExtension.jar */;
+			productType = "com.apple.product-type.library.static";
+		};
+		75A8C7451AB036600041B6B0 /* airExtension.ane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75A8C7601AB036600041B6B0 /* Build configuration list for PBXNativeTarget "airExtension.ane" */;
+			buildPhases = (
+				75A8C7661AB126840041B6B0 /* Run air swc */,
+				75A8C7441AB036600041B6B0 /* Run adobe ane compiler */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				750DF6BB1B0340E00008A70E /* PBXTargetDependency */,
+				75C697501ABA5C4800A54283 /* PBXTargetDependency */,
+			);
+			name = airExtension.ane;
+			productName = AirplayExtension.ane;
+			productReference = 75A8C7461AB036600041B6B0 /* airExtension.ane */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AC0EBA4151A38F300A3043E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					757FBFB91B01FB0C00D27E4C = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					75A8C7451AB036600041B6B0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 5AC0EBA7151A38F300A3043E /* Build configuration list for PBXProject "airExtension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5AC0EBA2151A38F300A3043E;
+			productRefGroup = 5AC0EBAE151A38F300A3043E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AC0EBAC151A38F300A3043E /* airExtension */,
+				757FBFB91B01FB0C00D27E4C /* airJavaExtension */,
+				75A8C7451AB036600041B6B0 /* airExtension.ane */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		757FBFBE1B01FB3200D27E4C /* Java compile */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Java compile";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "chmod 755 \"$PROJECT_DIR/ANECompiler/generateJar.sh\"\n\"$PROJECT_DIR/ANECompiler/generateJar.sh\"\n";
+		};
+		75A8C7441AB036600041B6B0 /* Run adobe ane compiler */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run adobe ane compiler";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "chmod 755 \"$PROJECT_DIR/ANECompiler/generateANE.sh\"\n\"$PROJECT_DIR/ANECompiler/generateANE.sh\"\n\t\t\t\t\t";
+		};
+		75A8C7661AB126840041B6B0 /* Run air swc */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run air swc";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${AIR_SDK_PATH}\"/bin/acompc -source-path \"${PROJECT_DIR}/${NATIVEEXTENSION_PATH}\" -include-classes \"${SWC_Include_Classes}\" -swf-version=\"${SWF_Version}\" -output \"${PROJECT_DIR}/${NATIVEEXTENSION_SWC}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AC0EBA9151A38F300A3043E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757F1DAA1AAD43E700FA2EA6 /* AirExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757FBFB61B01FB0C00D27E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		750DF6BB1B0340E00008A70E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 757FBFB91B01FB0C00D27E4C /* airJavaExtension */;
+			targetProxy = 750DF6BA1B0340E00008A70E /* PBXContainerItemProxy */;
+		};
+		75C697501ABA5C4800A54283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AC0EBAC151A38F300A3043E /* airExtension */;
+			targetProxy = 75C6974F1ABA5C4800A54283 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5AC0EBB8151A38F400A3043E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = ../;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		5AC0EBB9151A38F400A3043E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = ../;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				SYMROOT = build;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AC0EBBB151A38F400A3043E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = "/tmp/$(Product_Name).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/ANECompiler/libs",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/airExtension-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Frameworks/ffmpeg/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ANECompiler",
+					"$(PROJECT_DIR)/ANECompiler/libs",
+					"$(PROJECT_DIR)/Frameworks/ffmpeg/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = airExtension;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AC0EBBC151A38F400A3043E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = "/tmp/$(Product_Name).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/ANECompiler/libs",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/airExtension-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Frameworks/ffmpeg/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ANECompiler",
+					"$(PROJECT_DIR)/ANECompiler/libs",
+					"$(PROJECT_DIR)/Frameworks/ffmpeg/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = airExtension;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		757FBFBC1B01FB0C00D27E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				Android_sdk = "/Users/mobile/android-sdks/platforms/android-20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLASS_DIR = com/ane/android;
+				EXECUTABLE_EXTENSION = jar;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				JAVA_FILE_DIR = "${PROJECT_DIR}/java";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.3;
+			};
+			name = Debug;
+		};
+		757FBFBD1B01FB0C00D27E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				Android_sdk = "/Users/mobile/android-sdks/platforms/android-20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLASS_DIR = com/ane/android;
+				EXECUTABLE_EXTENSION = jar;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				JAVA_FILE_DIR = "${PROJECT_DIR}/java";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.3;
+			};
+			name = Release;
+		};
+		75A8C75B1AB036600041B6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = /Users/mobile/Documents/AdobeAIRSDK;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PATH = "$(SRCROOT)/build";
+				EXECUTABLE_EXTENSION = ane;
+				EXECUTABLE_PREFIX = "";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				JAVA_LIB = libairJavaExtension.jar;
+				NATIVEEXTENSION_PATH = Flash/src;
+				NATIVEEXTENSION_SWC = Flash/bin/nativeextension.swc;
+				PRODUCT_NAME = airExtension;
+				SWC_Include_Classes = com.ios.ext.main;
+				SWF_Version = 25;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/bin/include/";
+			};
+			name = Debug;
+		};
+		75A8C75C1AB036600041B6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = /Users/mobile/Documents/AdobeAIRSDK;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PATH = "$(SRCROOT)/build";
+				EXECUTABLE_EXTENSION = ane;
+				EXECUTABLE_PREFIX = "";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				JAVA_LIB = libairJavaExtension.jar;
+				NATIVEEXTENSION_PATH = Flash/src;
+				NATIVEEXTENSION_SWC = Flash/bin/nativeextension.swc;
+				PRODUCT_NAME = airExtension;
+				SWC_Include_Classes = com.ios.ext.main;
+				SWF_Version = 25;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/bin/include/";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AC0EBA7151A38F300A3043E /* Build configuration list for PBXProject "airExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC0EBB8151A38F400A3043E /* Debug */,
+				5AC0EBB9151A38F400A3043E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AC0EBBA151A38F400A3043E /* Build configuration list for PBXNativeTarget "airExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC0EBBB151A38F400A3043E /* Debug */,
+				5AC0EBBC151A38F400A3043E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		757FBFBB1B01FB0C00D27E4C /* Build configuration list for PBXNativeTarget "airJavaExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757FBFBC1B01FB0C00D27E4C /* Debug */,
+				757FBFBD1B01FB0C00D27E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75A8C7601AB036600041B6B0 /* Build configuration list for PBXNativeTarget "airExtension.ane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A8C75B1AB036600041B6B0 /* Debug */,
+				75A8C75C1AB036600041B6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AC0EBA4151A38F300A3043E /* Project object */;
+}

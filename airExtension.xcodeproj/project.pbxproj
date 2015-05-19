@@ -45,7 +45,7 @@
 		5AC0EBB4151A38F300A3043E /* airExtension-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "airExtension-Prefix.pch"; sourceTree = "<group>"; };
 		5AC0EBC1151A3BEE00A3043E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		750DF6B91B02FF380008A70E /* generateJar.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateJar.sh; sourceTree = "<group>"; };
-		7561F9EA1AF2110500FCF5C8 /* main.as */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.as; sourceTree = "<group>"; };
+		7561F9EA1AF2110500FCF5C8 /* ANEController.as */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ANEController.as; sourceTree = "<group>"; };
 		757279841AAEE371003B78C9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		757279901AAEE3C7003B78C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		757F1DA71AAD43E700FA2EA6 /* AirExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirExtension.h; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 		7561F9E91AF2110500FCF5C8 /* ext */ = {
 			isa = PBXGroup;
 			children = (
-				7561F9EA1AF2110500FCF5C8 /* main.as */,
+				7561F9EA1AF2110500FCF5C8 /* ANEController.as */,
 			);
 			path = ext;
 			sourceTree = "<group>";
@@ -635,7 +635,7 @@
 				NATIVEEXTENSION_PATH = Flash/src;
 				NATIVEEXTENSION_SWC = Flash/bin/nativeextension.swc;
 				PRODUCT_NAME = airExtension;
-				SWC_Include_Classes = com.ios.ext.main;
+				SWC_Include_Classes = com.ios.ext.ANEController;
 				SWF_Version = 25;
 				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/bin/include/";
 			};
@@ -658,7 +658,7 @@
 				NATIVEEXTENSION_PATH = Flash/src;
 				NATIVEEXTENSION_SWC = Flash/bin/nativeextension.swc;
 				PRODUCT_NAME = airExtension;
-				SWC_Include_Classes = com.ios.ext.main;
+				SWC_Include_Classes = com.ios.ext.ANEController;
 				SWF_Version = 25;
 				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/bin/include/";
 			};

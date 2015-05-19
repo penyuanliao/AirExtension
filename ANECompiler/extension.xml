@@ -16,8 +16,11 @@
             <applicationDeployment>
                 <nativeLibrary>libairJavaExtension.jar</nativeLibrary>
                 <initializer>com.ane.android.airExtension</initializer>
-                <finalizer>com.ane.android.airExtension</finalizer>
             </applicationDeployment>
+        </platform>
+        
+        <platform name="default">
+            <applicationDeployment/>
         </platform>
         
     </platforms>

@@ -50,7 +50,8 @@ fi
 pushd "$CONFIGURATION_BUILD_DIR"
 "$AIR_SDK_PATH"/bin/adt -package -target ane "$TARGET_NAME" ./extension.xml -swc "$EXTENSION_SWC_FILE_NAME" \
 -platform iPhone-ARM -platformoptions ./platformRTMP.xml -C . "$NATIVE_EXTENSION_STATIC_LIB_NAME" ./library.swf \
--platform Android-ARM -C . "$jar_file" "$CONFIGURATION_BUILD_DIR"/library.swf
+-platform Android-ARM -C . "$jar_file" "$CONFIGURATION_BUILD_DIR"/library.swf \
+-platform default -C "$EXTENSION_SWC_FILE_NAME" .
 popd
 
 

@@ -41,15 +41,15 @@ javac -version
 
 javac -classpath .:"${LIB_DIR}"/"${FLASH_RUNTIME_EXTENSIONS}":"${Android_sdk}":"${JPATH}" -d "${OUTPUT_DIR}" "${SOURCE_FILES}/"*.java
 
-pushd "${JAVA_FILE_DIR}/${RELEASE_DIR}"
+pushd "${JAVA_FILE_DIR}/bin"
 
 jar cvf "${JAR_STATIC_LIB_NAME}" *
 
-cp -f "${JAVA_FILE_DIR}/${RELEASE_DIR}"/"${JAR_STATIC_LIB_NAME}" "$CONFIGURATION_BUILD_DIR"
+cp -f "${JAVA_FILE_DIR}"/bin/"${JAR_STATIC_LIB_NAME}" "$CONFIGURATION_BUILD_DIR"
 
 popd
 
-rm -rf "${OUTPUT_DIR}"
+#rm -rf "${OUTPUT_DIR}"
 
 mkdir -p -v "${PROJECT_DIR}/java/bin"
 

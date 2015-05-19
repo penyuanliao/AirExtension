@@ -5,7 +5,7 @@ package com.ios.ext
 	import flash.external.ExtensionContext;
 	import flash.utils.getTimer;
 
-	public class main extends EventDispatcher
+	public class ANEController extends EventDispatcher
 	{
 		private var _ec:ExtensionContext;
 		/****/
@@ -14,7 +14,7 @@ package com.ios.ext
 		/**
 		 * 初始化ANE物件, 監聽ANE回傳事件, ANE初始化
 		 **/
-		public function main()
+		public function ANEController()
 		{
 			_ec = ExtensionContext.createExtensionContext(extensionID, null);
 			//extension ansyc event

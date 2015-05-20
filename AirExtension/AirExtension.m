@@ -87,6 +87,20 @@ DEFINE_ANE_FUNCTION(isSupported)
     return fo;
 }
 
+DEFINE_ANE_FUNCTION(openUrl)
+{
+    NSLog(@"Entering openUrl()");
+    
+    NSString *str = FREObjectToNSString(argv[0]);
+    
+    NSURL *url = [NSURL URLWithString:str];
+    
+    [[UIApplication sharedApplication]openURL:url];
+    
+    NSLog(@"Exiting openUrl()");
+    return NULL;
+}
+
 // Return FREObject
 FREObject BoolToFREObject(BOOL boolean)
 {
@@ -111,7 +125,7 @@ void AirContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx
 {
     
     // Register the links btwn AS3 and ObjC. (dont forget to modify the nbFuntionsToLink integer if you are adding/removing functions)
-    NSInteger nbFuntionsToLink = 1;
+    NSInteger nbFuntionsToLink = 2;
     *numFunctionsToTest = (int)nbFuntionsToLink;
     
     FRENamedFunction* func = (FRENamedFunction*) malloc(sizeof(FRENamedFunction) * nbFuntionsToLink);
@@ -119,6 +133,10 @@ void AirContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx
     func[0].name = (const uint8_t*) "isSupported";
     func[0].functionData = NULL;
     func[0].function = &isSupported;
+    
+    func[1].name = (const uint8_t*) "openUrl";
+    func[1].functionData = NULL;
+    func[1].function = &openUrl;
     
     *functionsToSet = func;
     

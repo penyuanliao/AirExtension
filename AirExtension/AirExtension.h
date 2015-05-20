@@ -18,6 +18,7 @@
 DEFINE_ANE_FUNCTION(init);
 DEFINE_ANE_FUNCTION(videoStreamingStartup);
 DEFINE_ANE_FUNCTION(isSupported);
+DEFINE_ANE_FUNCTION(openUrl);
 
 void AirContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet);
 void AirContextFinalizer(FREContext ctx);

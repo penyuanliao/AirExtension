@@ -65,6 +65,7 @@
 		75A8C7851AB196740041B6B0 /* platformRTMP.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = platformRTMP.xml; sourceTree = "<group>"; };
 		75B77AA01AB92AF7007275C8 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		75B77AA21AB92DE8007275C8 /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
+		75B7F3261B0B3FD5002C66D1 /* OpenURL.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = OpenURL.java; sourceTree = "<group>"; };
 		75C697491AB978B600A54283 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -230,6 +231,7 @@
 		757FBFB21B01F89F00D27E4C /* functions */ = {
 			isa = PBXGroup;
 			children = (
+				75B7F3261B0B3FD5002C66D1 /* OpenURL.java */,
 				757FBFB31B01F89F00D27E4C /* IsSupported.java */,
 			);
 			path = functions;

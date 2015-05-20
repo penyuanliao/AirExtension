@@ -22,6 +22,8 @@ public class airExtensionContext extends FREContext {
 		
 		funcs.put("isSupported", 		new IsSupported());
 		
+        funcs.put("openUrl",           new OpenURL());
+        
 		return funcs;
 	}
 

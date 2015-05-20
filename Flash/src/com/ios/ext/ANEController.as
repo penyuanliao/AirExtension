@@ -34,5 +34,9 @@ package com.ios.ext
 			bool = _ec.call("isSupported") as Boolean;
 			return bool;
 		}
+		public function openURL(str:String):void
+		{
+			_ec.call("openUrl", str);
+		}
 	}
 }

@@ -38,6 +38,7 @@ package com.ios.ext
 		{
 			_ec.call("openUrl", str);
 		}
+		/** close app **/
 		public function systemExit():void
 		{
 			_ec.call("systemExit");

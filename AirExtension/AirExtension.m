@@ -101,6 +101,16 @@ DEFINE_ANE_FUNCTION(openUrl)
     return NULL;
 }
 
+DEFINE_ANE_FUNCTION(systemExit)
+{
+    NSLog(@"Entering systemExit()");
+    
+    exit(0);
+    
+    NSLog(@"Exiting systemExit()");
+    return NULL;
+}
+
 // Return FREObject
 FREObject BoolToFREObject(BOOL boolean)
 {
@@ -125,7 +135,7 @@ void AirContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx
 {
     
     // Register the links btwn AS3 and ObjC. (dont forget to modify the nbFuntionsToLink integer if you are adding/removing functions)
-    NSInteger nbFuntionsToLink = 2;
+    NSInteger nbFuntionsToLink = 3;
     *numFunctionsToTest = (int)nbFuntionsToLink;
     
     FRENamedFunction* func = (FRENamedFunction*) malloc(sizeof(FRENamedFunction) * nbFuntionsToLink);
@@ -137,6 +147,10 @@ void AirContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx
     func[1].name = (const uint8_t*) "openUrl";
     func[1].functionData = NULL;
     func[1].function = &openUrl;
+    
+    func[2].name = (const uint8_t*) "systemExit";
+    func[2].functionData = NULL;
+    func[2].function = &systemExit;
     
     *functionsToSet = func;
     

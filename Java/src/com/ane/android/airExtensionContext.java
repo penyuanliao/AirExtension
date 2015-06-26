@@ -20,9 +20,11 @@ public class airExtensionContext extends FREContext {
 	{
 		Map<String, FREFunction> funcs = new HashMap<String, FREFunction>();
 		
-		funcs.put("isSupported", 		new IsSupported());
+		funcs.put("isSupported", 		 new IsSupported());
 		
-        funcs.put("openUrl",           new OpenURL());
+        funcs.put("openUrl",             new OpenURL());
+        
+        funcs.put("SystemExit",          new SystemExit());
         
 		return funcs;
 	}

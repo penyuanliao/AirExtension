@@ -19,6 +19,7 @@
 		75B77AA11AB92AF7007275C8 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B77AA01AB92AF7007275C8 /* libiconv.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		75B77AA31AB92DE8007275C8 /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B77AA21AB92DE8007275C8 /* libbz2.1.0.dylib */; };
 		75C6974A1AB978B600A54283 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C697491AB978B600A54283 /* libz.1.dylib */; };
+		75EFE0401B3D36FD00921E4C /* SystemExit.java in Sources */ = {isa = PBXBuildFile; fileRef = 75EFE03F1B3D36FD00921E4C /* SystemExit.java */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		75B77AA21AB92DE8007275C8 /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
 		75B7F3261B0B3FD5002C66D1 /* OpenURL.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = OpenURL.java; sourceTree = "<group>"; };
 		75C697491AB978B600A54283 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
+		75EFE03F1B3D36FD00921E4C /* SystemExit.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SystemExit.java; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 			children = (
 				75B7F3261B0B3FD5002C66D1 /* OpenURL.java */,
 				757FBFB31B01F89F00D27E4C /* IsSupported.java */,
+				75EFE03F1B3D36FD00921E4C /* SystemExit.java */,
 			);
 			path = functions;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75EFE0401B3D36FD00921E4C /* SystemExit.java in Sources */,
 				757F1DAA1AAD43E700FA2EA6 /* AirExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,7 +585,7 @@
 		757FBFBC1B01FB0C00D27E4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				Android_sdk = "/Users/mobile/android-sdks/platforms/android-20";
+				Android_sdk = "$(HOME)/android-sdks/platforms/android-20";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -600,7 +604,7 @@
 		757FBFBD1B01FB0C00D27E4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				Android_sdk = "/Users/mobile/android-sdks/platforms/android-20";
+				Android_sdk = "$(HOME)/android-sdks/platforms/android-20";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = NO;
